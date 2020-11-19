@@ -17,10 +17,9 @@ window.addEventListener("click", e => {
     }
 
 });
-
 window.addEventListener("mousedown", (e) => {
-    re_sleep()
+    document.documentElement.clientWidth >= 1200 ? re_sleep() : false;
 });
 window.addEventListener("mouseup", (e) => {
-    re_sleep()
+    document.documentElement.clientWidth >= 1200 ? re_sleep() : false;
 });

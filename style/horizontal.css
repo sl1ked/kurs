@@ -13,6 +13,8 @@
         --radius-circle-btn: 43px;
         --shift--left: 12px;
         --shift--top: 12px;
+        --indent-block: 15px;
+        --font-size: 12px;
     }
     .scroll_left, .scroll_right {
         display: none;
@@ -32,6 +34,8 @@
         --radius-circle-btn: 43px;
         --shift--left: 12px;
         --shift--top: 12px;
+        --indent-block: 15px;
+        --font-size: 12px;
     }
     .scroll_left, .scroll_right {
         display: none;
@@ -51,6 +55,8 @@
         --radius-circle-btn: 43px;
         --shift--left: 30px;
         --shift--top: 30px;
+        --indent-block: 15px;
+        --font-size: 16px;
     }
     .scroll_left, .scroll_right {
         display: none;
@@ -70,6 +76,8 @@
         --radius-circle-btn: 43px;
         --shift--left: 120px;
         --shift--top: 120px;
+        --indent-block: 15px;
+        --font-size: 18px;
     }
 }
 
@@ -116,7 +124,8 @@
     height: 100%;
     display: flex;
     align-items: flex-end;
-    padding: 15px;
+    padding: var(--indent-block);
+    font-size: var(--font-size);
 }
 
 .scroll_left, .scroll_right {
