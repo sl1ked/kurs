@@ -24,7 +24,7 @@
 
 /* md-устройства (больше или равно 768px) */
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
      :root {
         --sleep_button_slide: 8px;
         --sleep_right_px: 5px;
@@ -74,8 +74,8 @@
         --width-block: 347px;
         --height-block: calc(var(--width-block) * 0.583554377);
         --radius-circle-btn: 43px;
-        --shift--left: 120px;
-        --shift--top: 120px;
+        --shift--left: 80px;
+        --shift--top: 80px;
         --indent-block: 15px;
         --font-size: 18px;
     }
