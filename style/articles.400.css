@@ -1,9 +1,21 @@
-.post-footer__button {
-  display: block;
-  float: left;
-  margin: 8px 0 15px;
-}
-
 .content-header__filter-button {
   margin-top: 7px;
+}
+
+.post-footer {
+  font-size: 13px;
+}
+
+.post-footer>* {
+  margin: 2px;
+}
+
+.post-footer__button {
+  padding: 0 8px;
+  height: 24px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
