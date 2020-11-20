@@ -12,6 +12,7 @@
     --cicle-orient: block;
     --padding-content: 0 5vw 0 2vw;
     --padding-text: 10px 0 10px 0;
+    --gradien: linear-gradient(90deg, #FFD89B 0.52%, #19547B 100%);
 }
 
 @media (max-width: 576px) {
@@ -26,8 +27,9 @@
         --image-vw: 100vw;
         --position: relative;
         --cicle-orient: inline-flex;
-        --padding-content: 12px 0 12px 0;
+        --padding-content: 19px 0 12px 0;
         --padding-text: 0 20px 0 20px;
+        --gradien: linear-gradient(180deg, #FFD89B 0.52%, #19547B 100%);
     }
 }
 
@@ -53,7 +55,7 @@
 }
 
 .carusel {
-    background: linear-gradient(90deg, #FFD89B 0.52%, #19547B 100%);
+    background: var(--gradien);
     width: var(--width-carusel);
     height: var(--height-carusel);
     border-radius: 18px;
