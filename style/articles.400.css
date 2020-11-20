@@ -1,0 +1,9 @@
+.post-footer__button {
+  display: block;
+  float: left;
+  margin: 8px 0 15px;
+}
+
+.content-header__filter-button {
+  margin-top: 7px;
+}
