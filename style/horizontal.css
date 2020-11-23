@@ -149,6 +149,7 @@
 
 .scroll_right {
     right: var(--sleep_button_slide);
+    display: block;
 }
 
 .scroll_right:hover {

@@ -15,7 +15,7 @@ let data = [{
     header: `Что такое ротрота это когда?`,
     content: `надеюсь там будет смешная шутка ради моего самочувства-текста`
 }];
-// Выше лежит перечень всех необходимых элементов( желательно не делать их больше 6, иначе будет вылетать за пределы изображение)
+// Выше лежит перечень всех необходимых элементов( желательно не делать их больше 6, иначе изображение будет вылетать за пределы )
 
 // основные элементы
 let image_carusel = document.getElementsByClassName(`image-carusel`)[0];
@@ -24,23 +24,22 @@ let header_carusel = document.querySelector(`.carusel>h3`);
 let content_carusel = document.querySelector(`.carusel>p`);
 
 // зацикленное увеличениие i на единицу
-let iUp = () => {
-    return i = ++i % data.length;
-}
+let iIncrease = (index, CaruselDataArray) => { return ++index % CaruselDataArray.length; }
 let render_circle = () => { // добавляем на страницу нужное число кругов индикаторов
     for (i in data) {
         circles.innerHTML += `<div class='circle cl-${i}'></div>`;
     }
 }
 let circle = document.getElementsByClassName(`circle`);
-let clear = () => {
-    // убираем от всех кругов класс выбранного круга
+let clearAllElementClassFocus = () => {
+    // убираем от всех кругов класс focus
     for (let index = 0; index < circle.length; index++) {
         circle[index].classList.remove(`focus`)
     }
 }
+
 let render = (index) => {
-    clear();
+    clearAllElementClassFocus();
     (document.getElementsByClassName(`cl-${index}`)[0]).classList.add(`focus`);
     setTimeout(() => {
         // отрисовываем контент
@@ -49,6 +48,7 @@ let render = (index) => {
         content_carusel.innerText = `${data[index].content}`;
     }, 700); // задержка чтобы индикатор успел перейти
 }
+
 circles.addEventListener("click", (e) => {
     // слушаем когда появится клик по кругам- индикаторам и меняем контент по номеру выбранного круга
     if (e.target.classList[0] === 'circle') {
@@ -61,5 +61,5 @@ render_circle();
 render(i);
 setInterval(() => {
     render(i)
-    iUp();
-}, 2000);
+    i = iIncrease(i, data);
+}, 5e3);

@@ -1,0 +1,264 @@
+/* rubik-regular - latin */
+
+:root {
+    --gradient: linear-gradient(89.31deg, #24C7DC 0.57%, #514A9D 99.4%);
+    --dark-gradient: linear-gradient(89.31deg, #22BACE 0.57%, #48418F 99.4%);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v11-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/rubik-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/rubik-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/rubik-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/rubik-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/rubik-v11-latin-regular.svg#Rubik') format('svg');
+    /* Legacy iOS */
+}
+
+html, body {
+    background: url(../img/fon.png) 50% 50% no-repeat fixed;
+    ;
+    background-size: 100%;
+}
+
+.register {
+    width: 495px;
+    height: 610px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    background: #F8F8F8;
+    /* shadow */
+    box-shadow: 0px 6px 16px rgba(137, 160, 186, 0.41);
+    border-radius: 28px;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.autoitem {
+    position: absolute;
+    width: 145px;
+    height: 28px;
+    left: 100px;
+    top: 191px;
+}
+
+.regitem {
+    position: absolute;
+    width: 145px;
+    height: 28px;
+    left: 270px;
+    top: 191px;
+}
+
+.register .nav .nav-link {
+    height: 40px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #9B9B9B;
+}
+
+.register .nav .nav-link:hover {
+    border: none;
+}
+
+.register .nav .nav-link.active {
+    border-image: linear-gradient(89.31deg, #24C7DC 0.57%, #514A9D 99.4%);
+    border-image-slice: 1;
+    border-bottom: solid 2px;
+    width: 110%;
+    color: #325B6C;
+}
+
+.register-heading {
+    position: absolute;
+    width: 260px;
+    height: 85px;
+    left: 130px;
+    top: 74px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 85px;
+    /* фон_надписи_в_слайдере */
+    background: linear-gradient(90deg, #24C6DC 0.52%, #514A9D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.field {
+    position: absolute;
+    left: 140px;
+    top: 296px;
+    margin: 0;
+}
+
+.regfield {
+    /* margin-bottom: 45px; */
+    border-bottom: solid 2px #325B6C;
+    width: 250px;
+    height: 36px;
+}
+
+.autofield {
+    margin-bottom: 45px;
+    border-bottom: solid 2px #325B6C;
+    width: 250px;
+    height: 36px;
+}
+
+.form-control {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.pic1 {
+    position: absolute;
+    left: 115px;
+    top: 305px;
+}
+
+.pic2 {
+    position: absolute;
+    left: 115px;
+    top: 385px;
+}
+
+.pic3 img {
+    position: absolute;
+    left: 115px;
+    top: 360px;
+    width: 20px;
+    height: 20px;
+}
+
+.pic4 {
+    position: absolute;
+    left: 115px;
+    top: 405px;
+}
+
+.pic5 {
+    position: absolute;
+    left: 115px;
+    top: 460px;
+}
+
+.btnRegister {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 250px;
+    height: 36px;
+    left: 135px;
+    top: 530px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #24C6DC 0.52%, #514A9D 100%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnAutoriz {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 250px;
+    height: 36px;
+    left: 135px;
+    top: 458px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #24C6DC 0.52%, #514A9D 100%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.password-control {
+    position: absolute;
+    right: 5px;
+    bottom: 50px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/eye.svg) no-repeat;
+    background-position: center right;
+    background-size: 20px 15px;
+}
+
+.password-control-reg1 {
+    position: absolute;
+    right: 5px;
+    bottom: 70px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/eye.svg) no-repeat;
+    background-position: center right;
+    background-size: 20px 15px;
+}
+
+.password-control-reg2 {
+    position: absolute;
+    right: 5px;
+    bottom: 18px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/eye.svg) no-repeat;
+    background-position: center right;
+    background-size: 20px 15px;
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    background: var(--gradient);
+    box-shadow: 0px 6px 55px rgba(74, 82, 92, 0.41);
+}
+
+.bckg-1 {
+    z-index: -1;
+    height: 35vh;
+    transform: skewY(-3deg) translateY(-2vh);
+}
+
+.bckg-2 {
+    z-index: -2;
+    height: 100vh;
+    background: var(--dark-gradient)
+}
+
+.bckg-3 {
+    transform: rotate(9.5deg) translateY(22vh) scale(1.15);
+    z-index: -1;
+    height: 50vh;
+    bottom: 0;
+    box-shadow: 0px -6px 55px rgba(74, 82, 92, 0.41);
+}
