@@ -4,7 +4,7 @@ body {
     letter-spacing: -0.05em;
 }
 
-.card-title, h2, .card, .carusel>h3 {
+.card-title, h2, .card, .carusel>h3, .card-body>h6 {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
 }

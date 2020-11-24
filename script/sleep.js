@@ -2,7 +2,7 @@ let button_sleep_left = document.getElementsByClassName(`scroll_left`)[0];
 let button_sleep_right = document.getElementsByClassName(`scroll_right`)[0];
 let conntent_block_width = document.getElementsByClassName(`popular__item`)[0].offsetWidth
 let StorageBlockSleep = document.getElementsByClassName(`popular`)[0];
-// const isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0)); // проверка сенсорный ли экран устройства
+const isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0)); // проверка сенсорный ли экран устройства
 let ifGoToEndScroll = (object, limitForScroll) => {
     return (object.scrollWidth - object.offsetWidth < object.scrollLeft + limitForScroll)
 }
@@ -31,5 +31,5 @@ window.addEventListener("click", e => {
 });
 
 StorageBlockSleep.addEventListener("scroll", (e) => {
-    re_sleep()
+    !isTouch ? re_sleep() : false;
 });

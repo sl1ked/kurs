@@ -12,3 +12,7 @@
 #main-content-section {
     padding: 48px 0 54px 0;
 }
+
+body {
+    overflow-x: hidden;
+}

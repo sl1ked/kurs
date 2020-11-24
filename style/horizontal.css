@@ -48,9 +48,6 @@
         --shift--left: calc(calc(100vw - 960px) / 2);
         --font-size-hr: 16px;
     }
-    .scroll_left, .scroll_right {
-        display: none;
-    }
 }
 
 
@@ -98,7 +95,8 @@
     top: var(--shift--top);
     position: relative;
     overflow-y: hidden;
-    /* width: 100vw; */
+    width: 99vw;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -109,6 +107,7 @@
     align-items: flex-end;
     padding: var(--indent-block);
     font-size: var(--font-size-hr);
+    box-sizing: border-box;
 }
 
 .scroll_left, .scroll_right {
@@ -132,7 +131,6 @@
 
 .scroll_right {
     right: var(--sleep_button_slide);
-    display: block;
 }
 
 .scroll_right:hover {
