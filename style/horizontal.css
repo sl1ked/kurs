@@ -1,0 +1,168 @@
+/* sm-устройства (больше или равно 576px) 
+пришлось немного изменить стандартные для бутстрапа значения...
+в медиа запросах только объявляем переменные, это значительно сократит остальной сss
+*/
+
+:root {
+    --sleep_button_slide: 8px;
+    --sleep_right_px: 5px;
+    --sleep_left_px: -5px;
+    --height-block: calc(var(--width-block) * 0.583554377);
+    --radius-circle-btn: 43px;
+    --shift--left: 12px;
+    --indent-block: 15px;
+    --font-size-hr: 12px;
+}
+
+@media (max-width: 576px) {
+     :root {
+        --width-block: 188.5px;
+        --shift--left: 0;
+        --font-size-hr: 12px;
+    }
+    .scroll_left, .scroll_right {
+        display: none;
+    }
+}
+
+
+/* md-устройства (больше или равно 768px) */
+
+@media (min-width: 576px) {
+     :root {
+        --width-block: 272px;
+        --shift--left: calc(calc(100vw - 720px) / 2);
+        --font-size-hr: 12px;
+    }
+    .scroll_left, .scroll_right {
+        display: none;
+    }
+}
+
+
+/* lg-устройства (больше или равно 992px) */
+
+@media (min-width: 992px) {
+     :root {
+        --width-block: 318px;
+        --shift--left: calc(calc(100vw - 960px) / 2);
+        --font-size-hr: 16px;
+    }
+}
+
+
+/* xl-устройства (больше или равно 1200px) */
+
+@media (min-width: 1200px) {
+     :root {
+        --width-block: 347px;
+        --shift--left: calc(calc(100vw - 1140px) / 2);
+        --font-size-hr: 18px;
+    }
+}
+
+.popular__item {
+    position: relative;
+    left: var(--shift--left);
+    width: var(--width-block);
+    height: var(--height-block);
+    color: #fff;
+    background: #000;
+    margin-left: 19px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 16px rgba(137, 160, 186, 0.41);
+    cursor: grab;
+    background-size: contain;
+}
+
+.blur {
+    height: 100%;
+    width: var(--width-block);
+    background: linear-gradient(179.78deg, rgba(0, 0, 0, 0) -2.53%, rgba(0, 0, 0, 0.6) 93.94%);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+}
+
+.popular {
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.popular-limit {
+    top: var(--shift--top);
+    position: relative;
+    overflow-y: hidden;
+    width: 99vw;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.blur>p {
+    text-align: left;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: var(--indent-block);
+    font-size: var(--font-size-hr);
+    box-sizing: border-box;
+}
+
+.scroll_left, .scroll_right {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    width: var(--radius-circle-btn);
+    height: var(--radius-circle-btn);
+    border-radius: var(--radius-circle-btn);
+    border: none;
+}
+
+.scroll_left {
+    left: var(--sleep_button_slide);
+    display: none;
+}
+
+.scroll_left:focus, .scroll_right:focus {
+    outline: none !important;
+}
+
+.scroll_right {
+    right: var(--sleep_button_slide);
+}
+
+.scroll_right:hover {
+    transform: translateX(var(--sleep_right_px));
+    transition: 0.5s;
+}
+
+.scroll_left:hover {
+    transform: translateX( var(--sleep_left_px));
+    transition: 0.5s;
+}
+
+
+/*вставка изображений через сss*/
+
+.item1 {
+    background-image: url("../img/horizontal/1.png");
+}
+
+.item2 {
+    background-image: url("../img/horizontal/2.png");
+}
+
+.item3 {
+    background-image: url("../img/horizontal/3.png");
+}
+
+.item4 {
+    background-image: url("../img/horizontal/4.png");
+}
+
+.popular-limit>h2 {
+    width: 100vw;
+    padding-left: var(--shift--left);
+}
