@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Rubik:wght@300;500&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -0.05em;
+}
+
+.card-title, h2, .card, .carusel>h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.card-text, .post-footer, .sort-item, .filter-item, .carusel>p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+}
+
+.carusel>h3 {
+    font-weight: 500;
+}
+
+.carusel>p {
+    line-height: 104.5%;
+    /* or 38px */
+    letter-spacing: -0.05em;
+}

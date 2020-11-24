@@ -13,6 +13,7 @@
     --padding-content: 0 5vw 0 2vw;
     --padding-text: 10px 0 10px 0;
     --gradien: linear-gradient(90deg, #FFD89B 0.52%, #19547B 100%);
+    --shift--left: calc(calc(100vw - 540px) / 2);
 }
 
 @media (max-width: 576px) {
@@ -30,27 +31,35 @@
         --padding-content: 19px 0 12px 0;
         --padding-text: 0 20px 0 20px;
         --gradien: linear-gradient(180deg, #FFD89B 0.52%, #19547B 100%);
+        --shift--left: calc(calc(100vw - 540px) / 2);
     }
 }
 
 @media (min-width: 576px) {
      :root {
-        --width-carusel: 70vw;
-        --font-size: 12px;
+        --width-carusel: 720px;
+        --height-carusel: calc(0.253 * var(--width-carusel));
+        --font-size: 16px;
         --gap: 20px;
+        --shift--left: calc(calc(100vw - 720px) / 2);
     }
 }
 
 @media (min-width: 992px) {
      :root {
-        --font-size: 20px;
+        --width-carusel: 960px;
+        --font-size: 22px;
         --gap: 20px;
+        --shift--left: calc(calc(100vw - 960px) / 2);
     }
 }
 
 @media (min-width: 1200px) {
      :root {
-        --font-size: 1.5em;
+        --width-carusel: 1140px;
+        --font-size: 28px;
+        --shift--left: calc(calc(100vw - 1140px) / 2);
+        --container-p-size: 30vw;
     }
 }
 
