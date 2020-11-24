@@ -69,7 +69,204 @@
             </div>
         </div>
     </div>
-
+    <section>
+        <div class="container">
+        <div class="content-header">
+            <h2>Может быть интересно</h2>
+            <div class="content-header__menu">
+            <select class="content-header__sort">
+                <option>Новые</option>
+                <option>Старые</option>
+                <option>Популярные</option>
+                <option>Непопулярные</option>
+                <option>Высокий рейтинг</option>
+                <option>Низкий рейтинг</option>
+            </select>
+            <button class="content-header__filter-button" onclick="openFilter()">
+                Фильтр
+            </button>
+            
+            <div class="filter content-header__filter card">
+                <div class="card-body">
+                <h6>Язык</h6>
+                <div class="filter-item active-item">Русский
+                    <img src="img/del.svg">
+                </div>
+                <div class="filter-item">Английский</div>
+                <br><br>
+                <h6>Категория</h6>
+                <div class="filter-item">Дизайн</div>
+                <div class="filter-item active-item">Web-разработка
+                    <img src="img/del.svg">
+                </div>
+                <div class="filter-item">DataScience</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+        <main class="col-lg-9">
+            <div class="posts">
+            <div class="post card mb-3">
+                <div class="row no-gutters">
+                <div class="img-block col-md-6">
+                    <img src="img/article1.png" class="card-img">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                    <h5 class="card-title">Дефицит цветов в современных фильмах</h5>
+                    <p class="card-text">Настал небольшой отпуск и я решил посмотреть наконец несколько фильмов. В процессе просмотра меня посетило ощущение, что в современных фильмах что-то не так, что раньше трава была зеленее и...</p>
+                    <div class="post-footer">
+                        <div class="post-footer__likes">
+                        351
+                        <img src="img/likes.svg">
+                        </div>
+                        <div class="post-footer__dislikes">
+                        22
+                        <img src="img/dislikes.svg">
+                        </div>
+                        <div class="post-footer__views">
+                        1022
+                        <img src="img/views.svg">
+                        </div>
+                        <div class="post-footer__button main-button">
+                        Читать >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="post card mb-3">
+                <div class="row no-gutters">
+                <div class="img-block col-md-6">
+                    <img src="img/article2.jpg" class="card-img">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                    <h5 class="card-title">Браузер и числа с плавающей запятой</h5>
+                    <p class="card-text">Несколько лет назад я много думал и писал о математике с плавающей запятой. Это было очень интересно, и в процессе исследований я многое узнал, но иногда я долгое время не использую на практике все эти...</p>
+                    <div class="post-footer">
+                        <div class="post-footer__likes">
+                        1022
+                        <img src="img/likes.svg">
+                        </div>
+                        <div class="post-footer__dislikes">
+                        300
+                        <img src="img/dislikes.svg">
+                        </div>
+                        <div class="post-footer__views">
+                        15k
+                        <img src="img/views.svg">
+                        </div>
+                        <div class="post-footer__button main-button">
+                        Читать >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="post card mb-3">
+                <div class="row no-gutters">
+                <div class="img-block col-md-6">
+                    <img src="img/article3.jpg" class="card-img">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                    <h5 class="card-title">Давайте сделаем переиспользуемый компонент tree view в Angular</h5>
+                    <p class="card-text">Я разрабатываю несколько Angular-библиотек, поэтому люблю делать простые и легко переиспользуемые решения для разработчиков. Недавно один из подписчиков в Твиттере спросил меня, как сделать...</p>
+                    <div class="post-footer">
+                        <div class="post-footer__likes">
+                        1.5k
+                        <img src="img/likes.svg">
+                        </div>
+                        <div class="post-footer__dislikes">
+                        543
+                        <img src="img/dislikes.svg">
+                        </div>
+                        <div class="post-footer__views">
+                        6k
+                        <img src="img/views.svg">
+                        </div>
+                        <div class="post-footer__button main-button">
+                        Читать >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="post card mb-3">
+                <div class="row no-gutters">
+                <div class="img-block col-md-6">
+                    <img src="img/article4.png" class="card-img">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                    <h5 class="card-title">Бизнес без данных — деньги на ветер</h5>
+                    <p class="card-text">«Данные — новая нефть», — твердят со всех сторон аналитики, эксперты, учёные. Действительно, бизнес, органы власти, межнациональные институты всех сфер деятельности собирают данные, новый виток развития...</p>
+                    <div class="post-footer">
+                        <div class="post-footer__likes">
+                        1022
+                        <img src="img/likes.svg">
+                        </div>
+                        <div class="post-footer__dislikes">
+                        300
+                        <img src="img/dislikes.svg">
+                        </div>
+                        <div class="post-footer__views">
+                        15k
+                        <img src="img/views.svg">
+                        </div>
+                        <div class="post-footer__button main-button">
+                        Читать >
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </main>
+        <div class="right-menu col-md-4 col-lg-3">
+            <div class="row">
+            <aside class="col-sm-6 col-md-12">
+                <div class="sort card">
+                <div class="card-header">Сортировать</div>
+                <div class="card-body">
+                    <div class="sort-item active-item">По дате
+                    <img src="img/gg_sort-az.svg">
+                    </div>
+                    <div class="sort-item">По просмотрам</div>
+                    <div class="sort-item">По рейтингу</div>
+                </div>
+                </div>
+            </aside>
+            <aside class="col-sm-6 col-md-12">
+                <div class="filter card">
+                <div class="card-header">Фильтр</div>
+                <div class="card-body">
+                    <h6>Язык</h6>
+                    <div class="filter-item active-item">Русский
+                    <img src="img/del.svg">
+                    </div>
+                    <div class="filter-item">Английский</div>
+                    <br><br>
+                    <h6>Категория</h6>
+                    <div class="filter-item">Дизайн</div>
+                    <div class="filter-item active-item">Web-разработка
+                    <img src="img/del.svg">
+                    </div>
+                    <div class="filter-item">DataScience</div>
+                </div>
+                </div>
+            </aside>
+            </div>  
+        </div>  
+        </div>
+        </div>
+    </section>
     <footer>
         <p>Авторы</p>
         <div class="authors">
