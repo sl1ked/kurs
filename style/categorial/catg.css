@@ -1,0 +1,127 @@
+:root {
+    --width-catg: 100vw;
+    --height-catg: calc(0.15 * var(--width-catg));
+}
+
+:root {
+    --top-padding: 4vh;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 576px) {
+     :root {
+        --left-padding: 28px;
+        --font-size-head-text: 36px;
+        --height-catg: calc(0.5 * var(--width-catg));
+    }
+}
+
+
+/* md-устройства (больше или равно 768px) */
+
+@media (min-width: 576px) {
+     :root {
+        --left-padding: calc(calc(100vw - 560px) / 2);
+        --height-catg: calc(0.25 * var(--width-catg));
+        --font-size-head-text: 48px;
+    }
+}
+
+@media (min-width: 768px) {
+     :root {
+        --left-padding: calc(calc(100vw - 720px) / 2);
+        --height-catg: calc(0.25 * var(--width-catg));
+        --font-size-head-text: 48px;
+    }
+}
+
+
+/* lg-устройства (больше или равно 992px) */
+
+@media (min-width: 992px) {
+     :root {
+        --left-padding: calc(calc(100vw - 960px) / 2);
+        --font-size-head-text: 72px;
+        --height-catg: calc(0.2 * var(--width-catg));
+    }
+}
+
+
+/* xl-устройства (больше или равно 1200px) */
+
+@media (min-width: 1200px) {
+     :root {
+        --left-padding: calc(calc(100vw - 1140px) / 2);
+        --font-size-head-text: 96px;
+    }
+}
+
+.type-page:before {
+    content: var(--type);
+    text-shadow: 0px 1px 2px #4E0707;
+    font-size: calc(var(--font-size-head-text) * 2 /3);
+}
+
+.catg-page:before {
+    content: var(--ctg);
+    text-shadow: 0px 1px 2px #4E0707;
+    font-size: var(--font-size-head-text);
+    top: var(--top-padding);
+}
+
+.catg-page, .type-page {
+    position: relative;
+    left: var(--left-padding);
+    top: var(--top-padding);
+}
+
+.dataScience {
+    --gradient-categorial: linear-gradient(89.31deg, #F86B6B 0.57%, #FFB443 99.4%);
+    --url: url('/img/categerial/DS.png') repeat;
+}
+
+.web {
+    --gradient-categorial: linear-gradient(90deg, #514A9D 0%, #F76B6B 100%);
+    --url: url('/img/categerial/web.png') repeat;
+}
+
+.design {
+    --gradient-categorial: linear-gradient(89.31deg, #24C6DC 0.57%, #514A9D 99.4%);
+    --url: url('/img/categerial/design.png') repeat;
+}
+
+.dataScience>.catg-page:before {
+    content: "DataScience.";
+}
+
+.web>.catg-page:before {
+    content: "Web-разработка.";
+}
+
+.design>.catg-page:before {
+    content: "ДИЗАЙН.";
+}
+
+.kurs>.type-page:before {
+    content: "Курсы";
+}
+
+.articles>.type-page:before {
+    content: "Статьи";
+}
+
+.lection>.type-page:before {
+    content: "Лекции";
+}
+
+.header-page {
+    width: var(--width-catg);
+    height: var(--height-catg);
+    background: var(--url), var(--gradient-categorial);
+    filter: alpha(0.5);
+    font-size: 50px;
+    color: white;
+}
