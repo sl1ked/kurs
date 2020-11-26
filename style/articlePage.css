@@ -1,0 +1,148 @@
+.card-text {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    font-family: 'Open-sans';
+    font-weight: 300;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.post-footer {
+    font-size: 12px;
+}
+
+.tags, .dateArticle {
+    display: inline-flex;
+    font-size: 12px;
+}
+
+.tags>div, .dateArticle {
+    padding-left: 8px;
+}
+
+.content-box>img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 40vh;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.content-box {
+    font-size: 16px;
+    font-family: 'Open-sans';
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 135.7%
+}
+
+.content-box>h5, .content-box>h6 {
+    font-weight: 600;
+}
+
+.nameArticle, h3, .comment {
+    font-family: 'Rubik';
+    font-weight: 300;
+    line-height: 104.5%;
+}
+
+.review, .review>span {
+    background: var(--main-gradient);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 6px 12px;
+}
+
+.review>div:nth-child(2) {
+    text-align: end;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.like, .dislike {
+    padding: 0 10px 0 10px;
+}
+
+.comment>div:nth-child(1) {
+    display: inline-flex;
+    align-items: center;
+}
+
+.date {
+    margin-left: 15px;
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+}
+
+.textComment {
+    margin-bottom: 0;
+}
+
+.comment {
+    margin: 30px 0 0 60px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 35px;
+}
+
+.header-comments {
+    margin-left: 30px;
+}
+
+.comment-section {
+    margin: 30px 0;
+}
+
+.post {
+    margin-right: auto;
+    width: 80%;
+    min-width: 280px;
+    margin-left: auto;
+}
+
+@media (min-width: 990px) {
+    .post {
+        margin-right: auto;
+        width: 100%;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 780px) {
+    .review {
+        font-size: 16px;
+    }
+    .header-comments {
+        margin-left: 10px;
+    }
+    .comment {
+        margin: 20px 0 0 20px;
+    }
+    .textComment {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .review>div>div>span:nth-child(1) {
+        display: none;
+    }
+    .review {
+        grid-template-columns: 3fr 1fr;
+    }
+    .textComment {
+        font-size: 14px;
+    }
+}

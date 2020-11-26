@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&family=Rubik:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Roboto&family=Rubik:wght@300;500&display=swap');
+:root {
+    --main-gradient: linear-gradient(89.31deg, #24C6DC 0.57%, #514A9D 99.4%);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: -0.05em;

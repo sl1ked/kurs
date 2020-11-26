@@ -1,34 +1,39 @@
 body {
-    font: 14px 'Verdana';
     margin: 0;
     padding: 0;
 }
+
 ul {
     display: block;
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 ul:after {
     display: block;
     content: ' ';
     clear: both;
     float: none;
 }
-ul.menu > li {
+
+ul.menu>li {
     float: left;
     position: relative;
 }
-ul.menu > li > a {
+
+ul.menu>li>a {
     display: block;
     padding: 10px;
     color: white;
     background-color: red;
     text-decoration: none;
 }
-ul.menu > li > a:hover {
+
+ul.menu>li>a:hover {
     background-color: black;
 }
+
 ul.submenu {
     display: none;
     position: absolute;
@@ -38,20 +43,33 @@ ul.submenu {
     background-color: white;
     border: 1px solid red;
 }
-ul.submenu > li {
+
+ul.submenu>li {
     display: block;
 }
-ul.submenu > li > a {
+
+ul.submenu>li>a {
     display: block;
     padding: 10px;
     color: white;
     background-color: red;
     text-decoration: none;
 }
-ul.submenu > li > a:hover {
+
+ul.submenu>li>a:hover {
     text-decoration: underline;
 }
 
-ul.menu > li:hover > ul.submenu {
+ul.menu>li:hover>ul.submenu {
     display: block;
+}
+
+.navbar-collapse {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.mr-auto {
+    margin-left: auto !important;
+    margin-right: 5vw !important;
 }

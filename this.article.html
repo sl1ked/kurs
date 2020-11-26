@@ -5,206 +5,277 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/articles/articles.css">
     <link rel="stylesheet" href="style/articles/articles.1200.css" media="screen and (max-width: 1200px)">
     <link rel="stylesheet" href="style/articles/articles.992.css" media="screen and (max-width: 992px)">
     <link rel="stylesheet" href="style/articles/articles.400.css" media="screen and (max-width: 400px)">
     <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/articlePage.css">
+
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">UniKurs</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="iconify" data-inline="false" data-icon="simple-line-icons:menu" style="color: #ffffff; font-size: 25px;"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Лекции
+                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Дизайн</a></li>
+                                <li><a class="dropdown-item" href="#">Web-разработка</a></li>
+                                <li><a class="dropdown-item" href="#">DataScience</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Статьи
+                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Дизайн</a></li>
+                                <li><a class="dropdown-item" href="#">Web-разработка</a></li>
+                                <li><a class="dropdown-item" href="#">DataScience</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Курсы
+                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Дизайн</a></li>
+                                <li><a class="dropdown-item" href="#">Web-разработка</a></li>
+                                <li><a class="dropdown-item" href="#">DataScience</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="avtorization.html">Войти</a>
+                </div>
+
+            </div>
+        </nav>
+        </div>
+    </header>
     <section>
         <div class="container">
             <div class="content-header">
-                <div class="content-header__menu">
-                    <select class="content-header__sort">
-            <option>Новые</option>
-            <option>Старые</option>
-            <option>Популярные</option>
-            <option>Непопулярные</option>
-            <option>Высокий рейтинг</option>
-            <option>Низкий рейтинг</option>
-          </select>
-                    <button class="content-header__filter-button" onclick="openFilter()">
-            Фильтр
-          </button>
+                <div class="row">
+                    <main class="col-lg-8">
+                        <div class="post">
+                            <div class="dateArticle">12.03.2020</div>
+                            <h3 class="nameArticle">Про хороший и плохой дизайн для недизайнеров</h3>
+                            <div class="tags">
+                                <div class="tag-1 ">проектирование</div>
+                                <div class="tag-2 ">интерфейсы</div>
+                                <div class="tag-3 ">проектирование</div>
+                            </div>
+                            <div class="content-box col-12">
+                                <img src="img/page/general.png" alt="" class="general-image">
+                                <p> Здравствуйте, меня зовут Анастасия Степанова, я дизайнер в Аркадии с опытом работы более 4 лет. Пришла в компанию в 2017 году в проект по разработке платформы для дистанционного обучения. Я часто сталкиваюсь с нарушением
+                                    UX-принципов в продуктах, поэтому хочу помочь менеджерам, начинающим дизайнерам и программистам освоить базовые принципы юзабилити, а также научиться распознавать распространённые ошибки.</p>
+                                <br>
+                                <h5>Дизайн решает проблемы</h5>
+                                <h6>Функциональность против украшательства</h6>
+                                <p>Когда я только начинала работать веб-дизайнером в маленьком агентстве, я уделяла гораздо больше внимания эстетике, нежели функциональности. Менеджер, клиент и я тратили уйму времени, пытаясь создать красивый сайт, бесконечно
+                                    двигали элементы и «играли» со шрифтами. Функции вроде «Перезвоните мне» появлялись на странице только потому, что они уже были на других сайтах. Об их назначении и уместности никто не думал. Со временем я поняла, что
+                                    дизайн в первую очередь должен решать проблемы.</p>
+                                <img src="img/page/2.png" alt="">
+                                <h6>Помещайте важное на первый экран</h6>
+                                <p>Помещайте важную информацию о продукте над сгибом страницы. Сгиб страницы — термин, пришедший из печатного дела, когда газету складывали пополам. В вебе он обозначает нижнюю границу окна браузера. Информация «над сгибом»
+                                    — это видимая при загрузке страницы часть контента. Информация под сгибом страницы не видна и требует прокрутки.<br><br> Если сайт выглядит не соответствующим запросу, мы не прокручиваем страницу на пять экранов ниже
+                                    в надежде найти что-то полезное, мы закрываем вкладку. Расположенное над сгибом должно мотивировать посетителя изучить больше.<br><br> Делайте контент уникальным — приевшиеся рекламные слоганы и фото со стоков не вызывают
+                                    интереса. Если вы заявляете, что у вас фермерская зелень, покажите грядки и расскажите о фермерах, с которыми сотрудничаете.
 
-                    <div class="filter content-header__filter card">
-                        <div class="card-body">
-                            <h6>Язык</h6>
-                            <div class="filter-item active-item">Русский
-                                <img src="img/del.svg">
-                            </div>
-                            <div class="filter-item">Английский</div>
-                            <br><br>
-                            <h6>Категория</h6>
-                            <div class="filter-item">Дизайн</div>
-                            <div class="filter-item active-item">Web-разработка
-                                <img src="img/del.svg">
-                            </div>
-                            <div class="filter-item">DataScience</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <main class="col-lg-9">
-                    <div class="posts">
-                        <div class="post card mb-3">
-                            <div class="row no-gutters">
-                                <div class="img-block col-md-6">
-                                    <img src="img/article1.png" class="card-img">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Дефицит цветов в современных фильмах</h5>
-                                        <p class="card-text">Настал небольшой отпуск и я решил посмотреть наконец несколько фильмов. В процессе просмотра меня посетило ощущение, что в современных фильмах что-то не так, что раньше трава была зеленее и...</p>
-                                        <div class="post-footer">
-                                            <div class="post-footer__likes">
-                                                351
-                                                <img src="img/likes.svg">
-                                            </div>
-                                            <div class="post-footer__dislikes">
-                                                22
-                                                <img src="img/dislikes.svg">
-                                            </div>
-                                            <div class="post-footer__views">
-                                                1022
-                                                <img src="img/views.svg">
-                                            </div>
-                                            <div class="post-footer__button main-button">
-                                                Читать >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post card mb-3">
-                            <div class="row no-gutters">
-                                <div class="img-block col-md-6">
-                                    <img src="img/article2.jpg" class="card-img">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Браузер и числа с плавающей запятой</h5>
-                                        <p class="card-text">Несколько лет назад я много думал и писал о математике с плавающей запятой. Это было очень интересно, и в процессе исследований я многое узнал, но иногда я долгое время не использую на практике все эти...</p>
-                                        <div class="post-footer">
-                                            <div class="post-footer__likes">
-                                                1022
-                                                <img src="img/likes.svg">
-                                            </div>
-                                            <div class="post-footer__dislikes">
-                                                300
-                                                <img src="img/dislikes.svg">
-                                            </div>
-                                            <div class="post-footer__views">
-                                                15k
-                                                <img src="img/views.svg">
-                                            </div>
-                                            <div class="post-footer__button main-button">
-                                                Читать >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post card mb-3">
-                            <div class="row no-gutters">
-                                <div class="img-block col-md-6">
-                                    <img src="img/article3.jpg" class="card-img">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Давайте сделаем переиспользуемый компонент tree view в Angular</h5>
-                                        <p class="card-text">Я разрабатываю несколько Angular-библиотек, поэтому люблю делать простые и легко переиспользуемые решения для разработчиков. Недавно один из подписчиков в Твиттере спросил меня, как сделать...</p>
-                                        <div class="post-footer">
-                                            <div class="post-footer__likes">
-                                                1.5k
-                                                <img src="img/likes.svg">
-                                            </div>
-                                            <div class="post-footer__dislikes">
-                                                543
-                                                <img src="img/dislikes.svg">
-                                            </div>
-                                            <div class="post-footer__views">
-                                                6k
-                                                <img src="img/views.svg">
-                                            </div>
-                                            <div class="post-footer__button main-button">
-                                                Читать >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post card mb-3">
-                            <div class="row no-gutters">
-                                <div class="img-block col-md-6">
-                                    <img src="img/article4.png" class="card-img">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Бизнес без данных — деньги на ветер</h5>
-                                        <p class="card-text">«Данные — новая нефть», — твердят со всех сторон аналитики, эксперты, учёные. Действительно, бизнес, органы власти, межнациональные институты всех сфер деятельности собирают данные, новый виток развития...</p>
-                                        <div class="post-footer">
-                                            <div class="post-footer__likes">
-                                                1022
-                                                <img src="img/likes.svg">
-                                            </div>
-                                            <div class="post-footer__dislikes">
-                                                300
-                                                <img src="img/dislikes.svg">
-                                            </div>
-                                            <div class="post-footer__views">
-                                                15k
-                                                <img src="img/views.svg">
-                                            </div>
-                                            <div class="post-footer__button main-button">
-                                                Читать >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-                <div class="right-menu col-md-4 col-lg-3">
-                    <div class="row">
-                        <aside class="col-sm-6 col-md-12">
-                            <div class="sort card">
-                                <div class="card-header">Сортировать</div>
-                                <div class="card-body">
-                                    <div class="sort-item active-item">По дате
-                                        <img src="img/gg_sort-az.svg">
-                                    </div>
-                                    <div class="sort-item">По просмотрам</div>
-                                    <div class="sort-item">По рейтингу</div>
-                                </div>
-                            </div>
-                        </aside>
-                        <aside class="col-sm-6 col-md-12">
-                            <div class="filter card">
-                                <div class="card-header">Фильтр</div>
-                                <div class="card-body">
-                                    <h6>Язык</h6>
-                                    <div class="filter-item active-item">Русский
-                                        <img src="img/del.svg">
-                                    </div>
-                                    <div class="filter-item">Английский</div>
-                                    <br><br>
+                                </p>
+                                <img src="img/page/3.png" alt="">
+                                <h6>Помещайте важное на первый экран</h6>
+                                <p> Помещайте важную информацию о продукте над сгибом страницы. Сгиб страницы — термин, пришедший из печатного дела, когда газету складывали пополам. В вебе он обозначает нижнюю границу окна браузера. Информация «над сгибом»
+                                    — это видимая при загрузке страницы часть контента. Информация под сгибом страницы не видна и требует прокрутки.<br><br> Если сайт выглядит не соответствующим запросу, мы не прокручиваем страницу на пять экранов ниже
+                                    в надежде найти что-то полезное, мы закрываем вкладку. Расположенное над сгибом должно мотивировать посетителя изучить больше.<br><br> Делайте контент уникальным — приевшиеся рекламные слоганы и фото со стоков не вызывают
+                                    интереса. Если вы заявляете, что у вас фермерская зелень, покажите грядки и расскажите о фермерах, с которыми сотрудничаете.
 
-                                </div>
+                                </p>
                             </div>
-                        </aside>
+                        </div>
+                        <div class="review">
+                            <div> Как вам данная статья?</div>
+                            <div>
+                                <div class="like"><span> Нравится</span><span class="iconify" data-inline="false" data-icon="ant-design:like-filled" style="color: rgb(255, 255, 255); "></span> </div>
+                                <div class="dislike"><span> Не нравится </span><span class="iconify" data-inline="false" data-icon="ant-design:dislike-filled" style="color: rgb(255, 255, 255);"></span></div>
+                            </div>
+                        </div>
+                        <div class="comment-section">
+                            <div class="header-comments">Комментарии <span class="counter">2</span></div>
+                            <div class="comment">
+                                <div> <img src="img/page/avatar/1.png" alt="" class="avatar"> <span class="nickname">Seleditor</span></div>
+                                <p class="textComment">> пароль “самого разыскиваемого хакера”, использовавшего полное шифрование дисков, <br>> Джереми Хэммонда, был именем его кошки: “Chewy 123” <br><br>— Вася, ты типа мамкин хакер. А какой у тебя пароль от контактика? <br>—
+                                    Имя моего кота. <br>— Вась, ну даже я знаю, что нельзя ставить имя кота в качестве пароля! — Если кота зовут K5MLdLR2bcrUkz7oR97u5, то можно.</p>
+                                <div class="date">23:02 19.01.2021</div>
+                            </div>
+                            <div class="comment">
+                                <div><img src="img/page/avatar/2.png" alt="" class="avatar"><span class="nickname">Mikhail</span></div>
+                                <p class="textComment">всё равно же нельзя</p>
+                                <div class="date">23:54 19.01.2021</div>
+                            </div>
+                        </div>
+                    </main>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <h3>Похожие</h3>
+                        <div class="row">
+                            <main class="col-lg-9   ">
+                                <div class="posts">
+                                    <div class="post card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="img-block col-md-12">
+                                                <img src="img/article1.png" class="card-img">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Дефицит цветов в современных фильмах</h5>
+                                                    <p class="card-text">Настал небольшой отпуск и я решил посмотреть наконец несколько фильмов. В процессе просмотра меня посетило ощущение, что в современных фильмах что-то не так, что раньше трава была зеленее и...</p>
+                                                    <div class="post-footer">
+                                                        <div class="post-footer__likes">
+                                                            351
+                                                            <img src="img/likes.svg">
+                                                        </div>
+                                                        <div class="post-footer__dislikes">
+                                                            22
+                                                            <img src="img/dislikes.svg">
+                                                        </div>
+                                                        <div class="post-footer__views">
+                                                            1022
+                                                            <img src="img/views.svg">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="img-block col-md-12">
+                                                <img src="img/article2.jpg" class="card-img">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Браузер и числа с плавающей запятой</h5>
+                                                    <p class="card-text">Несколько лет назад я много думал и писал о математике с плавающей запятой. Это было очень интересно, и в процессе исследований я многое узнал, но иногда я долгое время не использую на практике все эти...
+                                                    </p>
+                                                    <div class="post-footer">
+                                                        <div class="post-footer__likes">
+                                                            1022
+                                                            <img src="img/likes.svg">
+                                                        </div>
+                                                        <div class="post-footer__dislikes">
+                                                            300
+                                                            <img src="img/dislikes.svg">
+                                                        </div>
+                                                        <div class="post-footer__views">
+                                                            15k
+                                                            <img src="img/views.svg">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post card mb-3">
+                                        <div class="row no-gutters">
+                                            <div class="img-block col-md-12">
+                                                <img src="img/article3.jpg" class="card-img">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Давайте сделаем переиспользуемый компонент tree view в Angular</h5>
+                                                    <p class="card-text">Я разрабатываю несколько Angular-библиотек, поэтому люблю делать простые и легко переиспользуемые решения для разработчиков. Недавно один из подписчиков в Твиттере спросил меня, как сделать...</p>
+                                                    <div class="post-footer">
+                                                        <div class="post-footer__likes">
+                                                            1.5k
+                                                            <img src="img/likes.svg">
+                                                        </div>
+                                                        <div class="post-footer__dislikes">
+                                                            543
+                                                            <img src="img/dislikes.svg">
+                                                        </div>
+                                                        <div class="post-footer__views">
+                                                            6k
+                                                            <img src="img/views.svg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
+                    </aside>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+    <footer>
+        <p>Авторы</p>
+        <div class="authors">
+            <p>Сушенцова Александра</p>
+            <p>@lekslala</p>
+            <p>lekslala</p>
+            <p>lekslala@gmail.com</p>
+        </div>
+        <div class="authors">
+            <p>Бутенко Виктор</p>
+            <p>@sl1ked</p>
+            <p>sl1ked</p>
+            <p>viktor.butenko.00@gmail.com</p>
+        </div>
+        <div class="authors">
+            <p>Бутенко Виктор</p>
+            <p>@dj.eban_official</p>
+            <p>shulyakdima</p>
+            <p>shulyakdima@gmal.com</p>
+        </div>
+        <div class="authors">
+            <p>Бутенко Виктор</p>
+            <p>@tanyamadie</p>
+            <p>id54904969</p>
+            <p>tanyamadie@gmail.com</p>
+        </div>
+        <div class="authors">
+            <p>Бутенко Виктор</p>
+            <p>@ulya_nizhnik</p>
+            <p>ulya_nizhnik</p>
+            <p>ulya_nizhnik@gmail.com</p>
+        </div>
+        <div class="authors">
+            <p>Бутенко Виктор</p>
+            <p>@natalka_denisovna</p>
+            <p>sorvache</p>
+            <p>sorvache@gmail.com</p>
+        </div>
+        <div class="authors">
+            <p>Бутенко Виктор</p>
+            <p>parabatau</p>
+            <p>@resepshel</p>
+            <p>resepshel@gmail.com</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
