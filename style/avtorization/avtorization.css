@@ -5,6 +5,10 @@
     --gradient: linear-gradient(89.31deg, #24C7DC 0.57%, #514A9D 99.4%);
     --dark-gradient: linear-gradient(89.31deg, #22BACE 0.57%, #48418F 99.4%);
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .register {
     width: 495px;
@@ -41,7 +45,7 @@
 
 .autoitem {
     position: absolute;
-    width: 145px;
+    width: 175px;
     height: 28px;
     left: 100px;
     top: 191px;
@@ -49,7 +53,7 @@
 
 .regitem {
     position: absolute;
-    width: 145px;
+    width: 175px;
     height: 28px;
     left: 270px;
     top: 191px;
@@ -73,8 +77,9 @@
     border-image: linear-gradient(89.31deg, #24C7DC 0.57%, #514A9D 99.4%);
     border-image-slice: 1;
     border-bottom: solid 2px;
-    width: 110%;
+    width: 100%;
     color: #325B6C;
+	
 }
 
 .register-heading {
@@ -126,19 +131,19 @@
 .pic1 {
     position: absolute;
     left: 115px;
-    top: 305px;
+    top: 308px;
 }
 
 .pic2 {
     position: absolute;
     left: 115px;
-    top: 385px;
+    top: 388px;
 }
 
 .pic3 img {
     position: absolute;
     left: 115px;
-    top: 360px;
+    top: 366px;
     width: 20px;
     height: 20px;
 }
@@ -146,13 +151,13 @@
 .pic4 {
     position: absolute;
     left: 115px;
-    top: 405px;
+    top: 411px;
 }
 
 .pic5 {
     position: absolute;
     left: 115px;
-    top: 460px;
+    top: 463px;
 }
 
 .btnRegister {
@@ -227,21 +232,25 @@
 }
 
 .bckg-1 {
+    transform: rotate(-6deg) translateY(-14vh) scale(1.15);
     z-index: -1;
-    height: 35vh;
-    transform: skewY(-3deg) translateY(-2vh);
+    height: 40vh;
+   /* bottom: 0;
+    box-shadow: 0px -6px 55px rgba(74, 82, 92, 0.41);*/
+	
 }
-
 .bckg-2 {
     z-index: -2;
     height: 100vh;
-    background: var(--dark-gradient)
+    background: var(--dark-gradient);
+
 }
 
 .bckg-3 {
-    transform: rotate(9.5deg) translateY(22vh) scale(1.15);
+    transform: rotate(9.5deg) translateY(16vh) scale(1.15);
     z-index: -1;
-    height: 50vh;
+    height: 40vh;
     bottom: 0;
     box-shadow: 0px -6px 55px rgba(74, 82, 92, 0.41);
+	
 }

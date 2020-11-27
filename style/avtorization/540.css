@@ -1,0 +1,99 @@
+.register {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0px;
+}
+
+.background {
+    width: 0vw;
+}
+
+.register-heading {
+    position: fixed;
+    width: 150px;
+    left: calc(calc(100vw - 150px) / 2);
+    font-size: 41px;
+    line-height: 85px;
+    top: calc(100vh*0.07);
+    margin: 0px 0px 0px 0px;
+}
+
+.autoitem {
+    left: calc(calc(100vw - 280px) / 2);
+    top: calc(100vh*0.25);
+    width: 150px;
+}
+
+.regitem {
+    left: calc(calc(100vw - 280px) / 2 + 160px);
+    top: calc(100vh*0.25);
+    width: 150px;
+}
+
+.field {
+    position: fixed;
+    left: calc(calc(100vw - 230px) / 2 + 20px);
+    top: calc(100vh*0.42);
+}
+
+.regfield {
+    /* margin-bottom: 45px; */
+    border-bottom: solid 2px #325B6C;
+    width: 230px;
+    height: 36px;
+}
+
+.autofield {
+    margin-bottom: 45px;
+    border-bottom: solid 2px #325B6C;
+    width: 230px;
+}
+
+.pic1 {
+    position: fixed;
+    left: calc(calc(100vw - 230px) / 2 - 20px);
+    top: calc(100vh*0.42 + 12px);
+}
+
+.pic2 {
+    position: fixed;
+    left: calc(calc(100vw - 230px) / 2 - 20px);
+    top: calc(100vh*0.42 + 93px);
+}
+
+.pic3 img {
+    position: fixed;
+    left: calc(calc(100vw - 230px) / 2 - 20px);
+    top: calc(100vh*0.42 + 71px);
+    width: 20px;
+    height: 20px;
+}
+
+.pic4 {
+    position: fixed;
+    left: calc(calc(100vw - 230px) / 2 - 20px);
+    top: calc(100vh*0.42 + 117px);
+}
+
+.pic5 {
+    position: fixed;
+    left: calc(calc(100vw - 230px) / 2 - 20px);
+    top: calc(100vh*0.42 + 169px);
+}
+
+.btnRegister {
+    position: fixed;
+    left: calc(calc(100vw - 250px) / 2);
+    top: calc(100vh * 0.835);
+}
+
+.btnAutoriz {
+    position: fixed;
+    left: calc(calc(100vw - 250px) / 2);
+    top: calc(100vh * 0.835);
+}
+
+.register .nav .nav-link {
+    font-size: 20px;
+}
