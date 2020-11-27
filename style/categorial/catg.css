@@ -82,12 +82,12 @@ body {
     padding-bottom: var(--top-padding);
 }
 
-.dataScience {
+.data {
     --gradient-categorial: linear-gradient(89.31deg, #F86B6B 0.57%, #FFB443 99.4%);
     --url: url('/img/categerial/DS.png') repeat;
 }
 
-.web {
+.web-dev {
     --gradient-categorial: linear-gradient(90deg, #514A9D 0%, #F76B6B 100%);
     --url: url('/img/categerial/web.png') repeat;
 }
@@ -97,11 +97,11 @@ body {
     --url: url('/img/categerial/design.png') repeat;
 }
 
-.dataScience>.catg-page:before {
+.data>.catg-page:before {
     content: "DataScience.";
 }
 
-.web>.catg-page:before {
+.web-dev>.catg-page:before {
     content: "Web-разработка.";
 }
 
@@ -109,7 +109,7 @@ body {
     content: "ДИЗАЙН.";
 }
 
-.kurs>.type-page:before {
+.courses>.type-page:before {
     content: "Курсы";
 }
 
@@ -117,7 +117,7 @@ body {
     content: "Статьи";
 }
 
-.lection>.type-page:before {
+.lectures>.type-page:before {
     content: "Лекции";
 }
 
