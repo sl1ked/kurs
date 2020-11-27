@@ -1,6 +1,6 @@
 :root {
     --width-catg: 100vw;
-    --height-catg: calc(0.15 * var(--width-catg));
+    --height-catg: auto
 }
 
 :root {
@@ -72,10 +72,14 @@ body {
     top: var(--top-padding);
 }
 
-.catg-page, .type-page {
-    position: relative;
-    left: var(--left-padding);
-    top: var(--top-padding);
+.catg-page {
+    padding-left: var(--left-padding);
+    padding-top: var(--top-padding);
+}
+
+.type-page {
+    padding-left: var(--left-padding);
+    padding-bottom: var(--top-padding);
 }
 
 .dataScience {
@@ -119,7 +123,6 @@ body {
 
 .header-page {
     width: var(--width-catg);
-    height: var(--height-catg);
     background: var(--url), var(--gradient-categorial);
     filter: alpha(0.5);
     font-size: 50px;
