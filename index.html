@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/font.css">
+
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/carusel.css">
@@ -15,7 +17,6 @@
     <link rel="stylesheet" href="style/articles/articles.992.css" media="screen and (max-width: 992px)">
     <link rel="stylesheet" href="style/articles/articles.400.css" media="screen and (max-width: 400px)">
     <link rel="stylesheet" href="style/main-style.css">
-    <link rel="stylesheet" href="style/font.css">
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
     <script src="script/dragscroll.js"></script>
@@ -23,13 +24,34 @@
 </head>
 
 <body>
+    <div class="dialog">
+        <button class='closes'><span class="iconify" data-inline="false" data-icon="ant-design:close-outlined" style="color: #fff; font-size: 40px;"></span></button>
+        <div class="container-dialog">
+            <div class="arrow"><img src="img/menu/arow.png" alt=""></div>
+            <div class="container-categorial">
+                <div class="categorial-main">
+                    <div class="design">Дизайн</div>
+                    <div class="web-dev">Web-разработка</div>
+                    <div class="data">DataScience</div>
+                </div>
+            </div>
+            <div class="arrow"><img src=" img/menu/arow.png " alt=" "></div>
+            <div class="container-types ">
+                <div class="articles ">Статьи</div>
+                <div class="lectures ">Лекции</div>
+                <div class="courses ">Курсы</div>
+            </div>
+            <div>Войти</div>
+        </div>
+    </div>
     <header>
         <!-- <div class="container"> -->
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">UniKurs</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="#"> <img src="img/menu/logo1.svg" alt=""> UniKurs</a>
+                <button id='button-drop-menu' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="iconify" data-inline="false" data-icon="simple-line-icons:menu" style="color: #ffffff; font-size: 25px;"></span>
+
               </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
@@ -378,6 +400,7 @@
     <script src="script/articles.js"></script>
     <script src="script/sleep.js "></script>
     <script src="script/carusel.js"></script>
+    <script src="script/menu.js"></script>
 </body>
 
 </html>

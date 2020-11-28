@@ -1,3 +1,9 @@
+:root {
+    --header-gradient-design: linear-gradient(93.62deg, #24C6DC 2.97%, #514A9D 97.03%);
+    --header-gradient-web: linear-gradient(93.62deg, #514A9D 5.91%, #F86B6B 97.03%);
+    --header-gradient-ds: linear-gradient(93.62deg, #F86B6B 2.97%, #FFB443 97.03%);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -72,4 +78,74 @@ ul.menu>li:hover>ul.submenu {
 .mr-auto {
     margin-left: auto !important;
     margin-right: 5vw !important;
+}
+
+.dialog {
+    font-family: 'Rubik';
+    font-size: 30px;
+    font-weight: 300;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: var(--header-gradient-design);
+    color: #fff;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.container-categorial {
+    width: 100vw;
+    overflow-x: scroll;
+    transition: .7s;
+}
+
+.container-categorial::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.categorial-main {
+    display: flex;
+    width: 200vw;
+}
+
+.container-dialog {
+    margin-top: 20vh;
+}
+
+.categorial-main>div {
+    margin-right: 20px;
+}
+
+.container-types {
+    width: 100vw;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    margin: 5vh 0;
+}
+
+.arrow {
+    font-size: 12px;
+}
+
+.arrow:nth-child(1) {
+    transform: rotate(180deg);
+}
+
+.closes {
+    position: absolute;
+    right: 0px;
+    background: none;
+    border: hidden;
+}
+
+header {
+    position: fixed;
+    z-index: 99;
+}
+
+.navbar-brand>img {
+    width: 48px;
 }
