@@ -7,7 +7,7 @@ let closeButton = document.getElementsByClassName('closes')[0];
 let body = document.querySelector('body')
 let dialog = document.getElementsByClassName('dialog')[0];
 let web = document.getElementsByClassName('web-dev')[0];
-let design = document.getElementsByClassName('design')[0];
+let articles = document.getElementsByClassName('articles')[0];
 let ds = document.getElementsByClassName('data')[0];
 displayMobile() ? NavbarItems.innerHTML = '' : false;
 
@@ -27,7 +27,7 @@ var moveleft = (value, object) => {
 let showMenu = () => {
     dialog.style.display = menuFlag() ? 'block' : 'none';
     body.style.overflowY = 'hidden';
-    categotialBox.style.marginLeft = `${(window.screen.availWidth-design.offsetWidth)/2}px`;
+    categotialBox.style.marginLeft = `${(window.screen.availWidth-categotialBox.children[0].offsetWidth )/2}px`;
 }
 
 let menuFlag = makerMenuFlag();
@@ -35,15 +35,12 @@ document.getElementById('button-drop-menu').addEventListener('click', () => {
     showMenu();
 });
 categotialBox.addEventListener('click', (element) => {
-    if (element.target.classList == 'design') {
-        moveleft(0, categorialLimit)
-    }
-    if (element.target.classList == 'web-dev') {
-        moveleft(design.offsetWidth + web.offsetWidth / 2 - 20, categorialLimit);
-    }
-    if (element.target.classList == 'data') {
-        moveleft(design.offsetWidth + web.offsetWidth + ds.offsetWidth / 2,
-            categorialLimit);
+    startSum = -(categotialBox.children[0]).offsetWidth / 2
+    for (index of categotialBox.children) {
+        if (index.className == element.target.className) {
+            moveleft(startSum + index.offsetWidth / 2, categorialLimit)
+        }
+        startSum += index.offsetWidth + 20;
     }
 });
 let setWidtScroll = (className, object) => {
@@ -68,11 +65,19 @@ let checkBlockScrollfocus = (scrollvalue, object) => {
 let chooseCategorial = (elementClassName) => {
     dialog.style.background = `var(--header-gradient-${elementClassName}`;
 }
+let sumAllWidth = (object) => {
+    sum = -object.children[0].offsetWidth / 2;
+    for (index of object.children) {
+        sum += index.offsetWidth + 20
+    }
+    return sum -= object.children[object.children.length - 1].offsetWidth / 2 + 20;
+}
 categorialLimit.addEventListener('scroll', () => {
     chooseCategorial(checkBlockScrollfocus(categorialLimit.scrollLeft, categotialBox));
-    (categorialLimit.scrollLeft > design.offsetWidth + web.offsetWidth + ds.offsetWidth / 2) ? categorialLimit.scrollLeft = design.offsetWidth + web.offsetWidth + ds.offsetWidth / 2: false;
+    document.getElementsByClassName('all')[0].innerText = `Все ${document.getElementsByClassName(checkBlockScrollfocus(categorialLimit.scrollLeft, categotialBox))[0].innerText}`;
+    (categorialLimit.scrollLeft > sumAllWidth(categotialBox)) ? categorialLimit.scrollLeft = sumAllWidth(categotialBox): false;
 
-})
+});
 closeButton.addEventListener('click', () => {
     dialog.style.display = menuFlag() ? 'block' : 'none';
     body.style.overflowY = 'scroll';

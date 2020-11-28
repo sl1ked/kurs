@@ -1,7 +1,7 @@
 :root {
-    --header-gradient-design: linear-gradient(93.62deg, #24C6DC 2.97%, #514A9D 97.03%);
-    --header-gradient-web-dev: linear-gradient(93.62deg, #514A9D 5.91%, #F86B6B 97.03%);
-    --header-gradient-data: linear-gradient(93.62deg, #F86B6B 2.97%, #FFB443 97.03%);
+    --header-gradient-articles: linear-gradient(93.62deg, #24C6DC 2.97%, #514A9D 97.03%);
+    --header-gradient-lectures: linear-gradient(93.62deg, #514A9D 5.91%, #F86B6B 97.03%);
+    --header-gradient-courses: linear-gradient(93.62deg, #F86B6B 2.97%, #FFB443 97.03%);
 }
 
 body {
@@ -90,7 +90,7 @@ ul.menu>li:hover>ul.submenu {
     z-index: 100;
     width: 100vw;
     height: 100vh;
-    background: var(--header-gradient-design);
+    background: var(--header-gradient-articles);
     color: #fff;
     text-align: center;
     transition: 0.7s;
@@ -154,4 +154,8 @@ header {
 
 .header-page {
     padding-top: 54px;
+}
+
+.all {
+    margin-top: 10px;
 }

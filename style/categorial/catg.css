@@ -97,6 +97,11 @@ body {
     --url: url('/img/categerial/design.png') repeat;
 }
 
+.all {
+    --gradient-categorial: linear-gradient(93.62deg, #49BD59 2.97%, #09A3BC 97.03%);
+    --url: url('/img/categerial/all.png') repeat;
+}
+
 .data>.catg-page:before {
     content: "DataScience.";
 }
@@ -107,6 +112,10 @@ body {
 
 .design>.catg-page:before {
     content: "ДИЗАЙН.";
+}
+
+.all>.catg-page::before {
+    content: "Все";
 }
 
 .courses>.type-page:before {

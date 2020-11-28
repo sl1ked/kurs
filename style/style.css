@@ -73,7 +73,8 @@
         width: 100wv;
         background: #EDEDED;
         font-size: 12px;
-        font-family: 'Rubic', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
         line-height: 6px;
     }
     
@@ -84,26 +85,46 @@
     }
     
     .authors {
-        width: 160px;
         display: inline-block;
         margin: 10px;
         text-align: center;
     }
     
-    .authors>div>div {
+    .img-sprite {
         background: url(/img/css_sprites_3.png) no-repeat;
-        width: 26px;
-        height: 26px;
+        width: 23px;
     }
     
     .bg-vk {
-        background-position: 0 -5px;
+        height: 23px;
+        width: 23px;
+        background-position: 0 0;
     }
     
     .bg-inst {
-        background-position: 0 -27px;
+        height: 15px;
+        width: 23px;
+        background-position-y: -22px;
     }
     
     .bg-mail {
-        background-position: 0 -54px;
+        height: 23px;
+        width: 23px;
+        background-position-y: -37px;
+    }
+    
+    .authors>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .authors>div>p {
+        margin: 0;
+    }
+    
+    .avtor {
+        padding: 20px 0 20px 10vw;
+        font-size: 14px;
     }
