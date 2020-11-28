@@ -90,27 +90,20 @@
         text-align: center;
     }
     
+    .authors>div>div {
+        background: url(/img/css_sprites_3.png) no-repeat;
+        width: 26px;
+        height: 26px;
+    }
+    
     .bg-vk {
-        background: url(/img/css_sprites_1.png) -5px -5px;
-        background-size: 260px 260px;
+        background-position: 0 -5px;
     }
     
     .bg-inst {
-        background: url(/img/css_sprites_1.png) -5px -275px;
-        background-size: 26px 26px;
-        transform: scale(0.1);
+        background-position: 0 -27px;
     }
     
     .bg-mail {
-        background: url(/img/css_sprites_1.png) -5px -545px;
-        background-size: 260px 260px;
-        transform: scale(0.1);
-    }
-    
-    .authors>div>div {
-        transform: scale(0.1);
-    }
-    
-    .authors>div> {
-        height: 26px;
+        background-position: 0 -54px;
     }

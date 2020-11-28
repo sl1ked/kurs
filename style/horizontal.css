@@ -17,7 +17,7 @@
 @media (max-width: 576px) {
      :root {
         --width-block: 188.5px;
-        --shift--left: 0;
+        --shift--left: 12px;
         --font-size-hr: 12px;
     }
     .scroll_left, .scroll_right {
