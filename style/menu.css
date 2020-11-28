@@ -1,7 +1,7 @@
 :root {
     --header-gradient-design: linear-gradient(93.62deg, #24C6DC 2.97%, #514A9D 97.03%);
-    --header-gradient-web: linear-gradient(93.62deg, #514A9D 5.91%, #F86B6B 97.03%);
-    --header-gradient-ds: linear-gradient(93.62deg, #F86B6B 2.97%, #FFB443 97.03%);
+    --header-gradient-web-dev: linear-gradient(93.62deg, #514A9D 5.91%, #F86B6B 97.03%);
+    --header-gradient-data: linear-gradient(93.62deg, #F86B6B 2.97%, #FFB443 97.03%);
 }
 
 body {

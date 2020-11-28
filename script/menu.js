@@ -46,14 +46,30 @@ categotialBox.addEventListener('click', (element) => {
             categorialLimit);
     }
 });
+let setWidtScroll = (className, object) => {
+    sumScroll = 0;
+    for (index of object.children) {
+        if (index.className == className) {
+            sumScroll += index.offsetWidth / 2
+            return sumScroll
+        }
+        sumScroll += index.offsetWidth + 20;
+    }
+};
+let checkBlockScrollfocus = (scrollvalue, object) => {
+    sumWeight = -object.children[0].offsetWidth / 2;
+    for (index of object.children) {
+        if (scrollvalue <= sumWeight + index.offsetWidth) {
+            return index.className
+        }
+        sumWeight += index.offsetWidth + 20;
+    }
+}
+let chooseCategorial = (elementClassName) => {
+    dialog.style.background = `var(--header-gradient-${elementClassName}`;
+}
 categorialLimit.addEventListener('scroll', () => {
-    (categorialLimit.scrollLeft < design.offsetWidth) ? dialogs.style.background = `linear-gradient(93.62deg, #24C6DC 2.97%, #514A9D 97.03%)`:
-        false;
-    (categorialLimit.scrollLeft > design.offsetWidth && categorialLimit.scrollLeft < design.offsetWidth + web.offsetWidth) ? dialogs.style.background = `linear-gradient(93.62deg, #514A9D 5.91%, #F86B6B 97.03%)`:
-        false;
-
-    (categorialLimit.scrollLeft > design.offsetWidth + web.offsetWidth && categorialLimit.scrollLeft < design.offsetWidth + web.offsetWidth + ds.offsetWidth) ? dialogs.style.background = `linear-gradient(93.62deg, #F86B6B 2.97%, #FFB443 97.03%)`:
-        false;
+    chooseCategorial(checkBlockScrollfocus(categorialLimit.scrollLeft, categotialBox));
     (categorialLimit.scrollLeft > design.offsetWidth + web.offsetWidth + ds.offsetWidth / 2) ? categorialLimit.scrollLeft = design.offsetWidth + web.offsetWidth + ds.offsetWidth / 2: false;
 
 })
