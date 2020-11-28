@@ -143,25 +143,6 @@
     transition: 0.5s;
 }
 
-
-/*вставка изображений через сss*/
-
-.item1 {
-    background-image: url("../img/horizontal/1.png");
-}
-
-.item2 {
-    background-image: url("../img/horizontal/2.png");
-}
-
-.item3 {
-    background-image: url("../img/horizontal/3.png");
-}
-
-.item4 {
-    background-image: url("../img/horizontal/4.png");
-}
-
 .popular-limit>h2 {
     width: 100vw;
     padding-left: var(--shift--left);
