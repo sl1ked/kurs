@@ -27,7 +27,8 @@ var moveleft = (value, object) => {
 let showMenu = () => {
     dialog.style.display = menuFlag() ? 'block' : 'none';
     body.style.overflowY = 'hidden';
-    categotialBox.style.marginLeft = `${(window.screen.availWidth-categotialBox.children[0].offsetWidth )/2}px`;
+    categotialBox.style.marginLeft = `${(document.documentElement.clientWidth
+        -categotialBox.children[0].offsetWidth )/2}px`;
 }
 
 let menuFlag = makerMenuFlag();
