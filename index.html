@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/font.css">
 
-    <link rel="stylesheet" href="style/menu.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/carusel.css">
-    <link rel="stylesheet" href="style/horizontal.css">
-    <link rel="stylesheet" href="style/articles/articles.css">
-    <link rel="stylesheet" href="style/articles/articles.1200.css" media="screen and (max-width: 1200px)">
-    <link rel="stylesheet" href="style/articles/articles.992.css" media="screen and (max-width: 992px)">
-    <link rel="stylesheet" href="style/articles/articles.400.css" media="screen and (max-width: 400px)">
-    <link rel="stylesheet" href="style/main-style.css">
+    <link rel="stylesheet" type='text/css' href="style/menu.css">
+    <link rel="stylesheet" type='text/css' href="style/style.css">
+    <link rel="stylesheet" type='text/css' href="style/carusel.css">
+    <link rel="stylesheet" type='text/css' href="style/horizontal.css">
+    <link rel="stylesheet" type='text/css' href="style/articles/articles.css">
+    <link rel="stylesheet" type='text/css' href="style/articles/articles.1200.css" media="screen and (max-width: 1200px)">
+    <link rel="stylesheet" type='text/css' href="style/articles/articles.992.css" media="screen and (max-width: 992px)">
+    <link rel="stylesheet" type='text/css' href="style/articles/articles.400.css" media="screen and (max-width: 400px)">
+    <link rel="stylesheet" type='text/css' href="style/main-style.css">
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
     <script src="script/dragscroll.js"></script>
@@ -46,7 +46,7 @@
         </div>
     </div>
     <header>
-        <!-- <div class="container"> -->
+
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"> <img src="img/menu/logo1.svg" alt=""> UniKurs</a>
@@ -91,56 +91,54 @@
 
             </div>
         </nav>
-        </div>
     </header>
 
-    <main>
-        <section id='carusel-section'>
-            <div class='container-carusel'>
-                <div class="carusel">
-                    <div class="image-carusel"> </div>
-                    <h3></h3>
-                    <p></p>
-                    <div class="circles">
+    <section id='carusel-section'>
+        <div class='container-carusel'>
+            <div class="carusel">
+                <div class="image-carusel"> </div>
+                <h3></h3>
+                <p></p>
+                <div class="circles">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular-section">
+        <div class="popular-limit">
+            <H2>Популярное</H2>
+            <button class="scroll_left"><span class="iconify" data-inline="false" data-icon="bi:arrow-left" style="color: #000; font-size: 28px;"></span></button>
+            <div class="popular dragscroll">
+                <div class="popular__item" style=' background-image: url("../img/horizontal/1.png")'>
+                    <!--onclick="document.location='ссылка'"  добавим к тегу и получим переходы по ссылке, но можно и через js -->
+                    <div class=" blur ">
+                        <p>Laravel–Дайджест (19–25 октября 2020)</p>
+                    </div>
+                </div>
+                <div class="popular__item" style=' background-image: url("../img/horizontal/2.png")'>
+                    <div class="blur ">
+                        <p>Как построить полнотекстовый поиск с помощью нейронных сетей</p>
+                    </div>
+                </div>
+                <div class="popular__item" style=' background-image: url("../img/horizontal/3.png")'>
+                    <div class="blur ">
+                        <p>Бизнес, госслужба, вуз, наука: все ли работы хороши?</p>
+                    </div>
+                </div>
+                <div class="popular__item" style=' background-image: url("../img/horizontal/4.png")'>
+                    <div class="blur ">
+                        <p>Бизнес, госслужба, вуз, наука: все ли работы хороши?</p>
+                    </div>
+                </div>
+                <div class="popular__item" style=' background-image: url("../img/horizontal/5.png")'>
+                    <div class="blur ">
+                        <p>Бизнес, госслужба, вуз, наука: все ли работы хороши?</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="popular-section">
-            <div class="popular-limit">
-                <H2>Популярное</H3>
-                    <button class="scroll_left"><span class="iconify" data-inline="false" data-icon="bi:arrow-left" style="color: #000; font-size: 28px;"></span></button>
-                    <div class="popular dragscroll">
-                        <div class="popular__item" style=' background-image: url("../img/horizontal/1.png")'>
-                            <!--onclick="document.location='ссылка'"  добавим к тегу и получим переходы по ссылке, но можно и через js -->
-                            <div class=" blur ">
-                                <p>Laravel–Дайджест (19–25 октября 2020)</p>
-                            </div>
-                        </div>
-                        <div class="popular__item" style=' background-image: url("../img/horizontal/2.png")'>
-                            <div class="blur ">
-                                <p>Как построить полнотекстовый поиск с помощью нейронных сетей</p>
-                            </div>
-                        </div>
-                        <div class="popular__item" style=' background-image: url("../img/horizontal/3.png")'>
-                            <div class="blur ">
-                                <p>Бизнес, госслужба, вуз, наука: все ли работы хороши?</p>
-                            </div>
-                        </div>
-                        <div class="popular__item" style=' background-image: url("../img/horizontal/4.png")'>
-                            <div class="blur ">
-                                <p>Бизнес, госслужба, вуз, наука: все ли работы хороши?</p>
-                            </div>
-                        </div>
-                        <div class="popular__item" style=' background-image: url("../img/horizontal/5.png")'>
-                            <div class="blur ">
-                                <p>Бизнес, госслужба, вуз, наука: все ли работы хороши?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="scroll_right "><span class="iconify" data-inline="false" data-icon="bi:arrow-right" style="color: #000; font-size: 28px;"></span></button>
-        </section>
-    </main>
+            <button class="scroll_right "><span class="iconify" data-inline="false" data-icon="bi:arrow-right" style="color: #000; font-size: 28px;"></span></button>
+        </div>
+    </section>
     <section id='main-content-section'>
         <div class="container">
             <div class="content-header">
@@ -458,6 +456,7 @@
                     <p>resepshel@gmail.com</p>
                 </div>
             </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
