@@ -15,6 +15,8 @@
 }
 
 .tags, .dateArticle {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 12px;
 }
@@ -58,14 +60,20 @@
 }
 
 .review {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     padding: 6px 12px;
 }
 
 .review>div:nth-child(2) {
     text-align: end;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -74,7 +82,11 @@
 }
 
 .comment>div:nth-child(1) {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -140,6 +152,7 @@
         display: none;
     }
     .review {
+        -ms-grid-columns: 3fr 1fr;
         grid-template-columns: 3fr 1fr;
     }
     .textComment {

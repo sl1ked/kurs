@@ -70,7 +70,9 @@
     background: #000;
     margin-left: 19px;
     border-radius: 12px;
+    -webkit-box-shadow: 0px 6px 16px rgba(137, 160, 186, 0.41);
     box-shadow: 0px 6px 16px rgba(137, 160, 186, 0.41);
+    cursor: -webkit-grab;
     cursor: grab;
     background-size: contain;
 }
@@ -78,7 +80,9 @@
 .blur {
     height: 100%;
     width: var(--width-block);
+    background: -o-linear-gradient(270.22deg, rgba(0, 0, 0, 0) -2.53%, rgba(0, 0, 0, 0.6) 93.94%);
     background: linear-gradient(179.78deg, rgba(0, 0, 0, 0) -2.53%, rgba(0, 0, 0, 0.6) 93.94%);
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     border-radius: 12px;
 }
@@ -86,6 +90,8 @@
 .popular {
     margin-bottom: -20px;
     padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -103,10 +109,15 @@
 .blur>p {
     text-align: left;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     padding: var(--indent-block);
     font-size: var(--font-size-hr);
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -134,12 +145,20 @@
 }
 
 .scroll_right:hover {
+    -webkit-transform: translateX(var(--sleep_right_px));
+    -ms-transform: translateX(var(--sleep_right_px));
     transform: translateX(var(--sleep_right_px));
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .scroll_left:hover {
+    -webkit-transform: translateX( var(--sleep_left_px));
+    -ms-transform: translateX( var(--sleep_left_px));
     transform: translateX( var(--sleep_left_px));
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 

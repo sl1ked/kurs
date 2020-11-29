@@ -1,130 +1,156 @@
-    html, body {
-        padding: 0;
-        margin: 0;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .my-container {
-        max-width: 1440px;
-        padding: 0 30px;
-        margin: auto;
-        height: 100%;
-    }
-    
-    header {
-        width: 100%;
-        height: 54px;
-        background: rgb(36, 198, 220);
-        background: linear-gradient(90deg, rgba(36, 198, 220, 1) 0%, rgba(81, 74, 157, 1) 100%);
-    }
-    
-    .navbar {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        padding: 0%;
-    }
-    
-    .navbar a {
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-    }
-    
-    .navbar .dropdown-menu {
-        margin-top: 7px;
-        background: rgb(36, 198, 220);
-        background: linear-gradient(90deg, rgba(36, 198, 220, 1) 0%, rgba(81, 74, 157, 1) 100%);
-        border: none;
-        border-radius: 0%;
-    }
-    
-    .mainslider-block {
-        background-color: #EDEDED;
-        box-shadow: inset 0px -8px 48px rgba(0, 0, 0, 0.13);
-        height: 385px;
-    }
-    
-    .flex-column-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .mainslider {
-        height: 325px;
-        width: 100%;
-        border-radius: 18px;
-        filter: drop-shadow(0px 6px 16px rgba(137, 160, 186, 0.41));
-        background: rgb(255, 216, 155);
-        background: linear-gradient(90deg, rgba(255, 216, 155, 1) 0%, rgba(25, 84, 123, 1) 100%);
-        -webkit-border-radius: 18px;
-        -moz-border-radius: 18px;
-        -ms-border-radius: 18px;
-        -o-border-radius: 18px;
-    }
-    
-    .content {
-        width: 100%;
-        height: 300px;
-    }
-    
-    footer {
-        width: 100wv;
-        background: #EDEDED;
-        font-size: 12px;
-        font-family: 'Rubik', sans-serif;
-        font-weight: 300;
-        line-height: 6px;
-    }
-    
-    .container-footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .authors {
-        display: inline-block;
-        margin: 10px;
-        text-align: center;
-    }
-    
-    .img-sprite {
-        background: url(/img/css_sprites_3.png) no-repeat;
-        width: 23px;
-    }
-    
-    .bg-vk {
-        height: 23px;
-        width: 23px;
-        background-position: 0 0;
-    }
-    
-    .bg-inst {
-        height: 15px;
-        width: 23px;
-        background-position-y: -22px;
-    }
-    
-    .bg-mail {
-        height: 23px;
-        width: 23px;
-        background-position-y: -37px;
-    }
-    
-    .authors>div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px 0;
-    }
-    
-    .authors>div>p {
-        margin: 0;
-    }
-    
-    .avtor {
-        padding: 20px 0 20px 10vw;
-        font-size: 14px;
-    }
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-container {
+    max-width: 1440px;
+    padding: 0 30px;
+    margin: auto;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 54px;
+    background: rgb(36, 198, 220);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(36, 198, 220, 1)), to(rgba(81, 74, 157, 1)));
+    background: -o-linear-gradient(left, rgba(36, 198, 220, 1) 0%, rgba(81, 74, 157, 1) 100%);
+    background: linear-gradient(90deg, rgba(36, 198, 220, 1) 0%, rgba(81, 74, 157, 1) 100%);
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0%;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 7px;
+    background: rgb(36, 198, 220);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(36, 198, 220, 1)), to(rgba(81, 74, 157, 1)));
+    background: -o-linear-gradient(left, rgba(36, 198, 220, 1) 0%, rgba(81, 74, 157, 1) 100%);
+    background: linear-gradient(90deg, rgba(36, 198, 220, 1) 0%, rgba(81, 74, 157, 1) 100%);
+    border: none;
+    border-radius: 0%;
+}
+
+.mainslider-block {
+    background-color: #EDEDED;
+    -webkit-box-shadow: inset 0px -8px 48px rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px -8px 48px rgba(0, 0, 0, 0.13);
+    height: 385px;
+}
+
+.flex-column-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.mainslider {
+    height: 325px;
+    width: 100%;
+    border-radius: 18px;
+    -webkit-filter: drop-shadow(0px 6px 16px rgba(137, 160, 186, 0.41));
+    filter: drop-shadow(0px 6px 16px rgba(137, 160, 186, 0.41));
+    background: rgb(255, 216, 155);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 216, 155, 1)), to(rgba(25, 84, 123, 1)));
+    background: -o-linear-gradient(left, rgba(255, 216, 155, 1) 0%, rgba(25, 84, 123, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 216, 155, 1) 0%, rgba(25, 84, 123, 1) 100%);
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+
+.content {
+    width: 100%;
+    height: 300px;
+}
+
+footer {
+    width: 100wv;
+    background: #EDEDED;
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    line-height: 6px;
+}
+
+.container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.authors {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.img-sprite {
+    background: url(/img/css_sprites_3.png) no-repeat;
+    width: 23px;
+}
+
+.bg-vk {
+    height: 23px;
+    width: 23px;
+    background-position: 0 0;
+}
+
+.bg-inst {
+    height: 15px;
+    width: 23px;
+    background-position-y: -22px;
+}
+
+.bg-mail {
+    height: 23px;
+    width: 23px;
+    background-position-y: -37px;
+}
+
+.authors>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.authors>div>p {
+    margin: 0;
+}
+
+.avtor {
+    padding: 20px 0 20px 10vw;
+    font-size: 14px;
+}

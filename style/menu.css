@@ -93,12 +93,16 @@ ul.menu>li:hover>ul.submenu {
     background: var(--header-gradient-articles);
     color: #fff;
     text-align: center;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
 }
 
 .container-categorial {
     width: 100vw;
     overflow-x: scroll;
+    -webkit-transition: .7s;
+    -o-transition: .7s;
     transition: .7s;
 }
 
@@ -108,6 +112,8 @@ ul.menu>li:hover>ul.submenu {
 }
 
 .categorial-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 200vw;
 }
@@ -132,6 +138,8 @@ ul.menu>li:hover>ul.submenu {
 }
 
 .arrow:nth-child(1) {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 

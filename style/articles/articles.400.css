@@ -1,21 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .content-header__filter-button {
-  margin-top: 7px;
+    margin-top: 7px;
 }
 
 .post-footer {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .post-footer>* {
-  margin: 2px;
+    margin: 2px;
 }
 
 .post-footer__button {
-  padding: 0 8px;
-  height: 24px;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
+    padding: 0 8px;
+    height: 24px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }

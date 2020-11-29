@@ -68,22 +68,38 @@
     width: var(--width-carusel);
     height: var(--height-carusel);
     border-radius: 18px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
+    -webkit-box-shadow: 0px 6px 16px rgba(137, 160, 186, 0.41);
     box-shadow: 0px 6px 16px rgba(137, 160, 186, 0.41);
+    display: -ms-grid;
     display: grid;
+    -webkit-column-gap: var(--gap);
+    -moz-column-gap: var(--gap);
     column-gap: var(--gap);
+    -ms-grid-columns: var(--grid-colunn);
     grid-template-columns: var(--grid-colunn);
+    -ms-grid-rows: var(--grid-row);
     grid-template-rows: var(--grid-row);
     padding: var(--padding-content);
     position: relative;
+}
+
+.carusel>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
 }
 
 .carusel>.image-carusel {
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
+    -webkit-box-shadow: 0px 4px 36px #00142B;
     box-shadow: 0px 4px 36px #00142B;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1 / 3;
 }
 
@@ -95,7 +111,11 @@
 }
 
 .container-carusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -104,6 +124,8 @@
 }
 
 .carusel>p {
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
     align-self: start;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -114,6 +136,7 @@
 
 .circles {
     right: 0;
+    -ms-grid-column-align: center;
     justify-self: center;
     position: var(--position);
     display: var(--cicle-orient);
@@ -126,7 +149,10 @@
     background-color: #7F8094;
     margin: var(--circle-size);
     cursor: pointer;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -136,17 +162,24 @@
 
 @media (max-width: 576px) {
     .carusel>.image-carusel {
+        -ms-grid-row: 1;
         grid-row: 1;
     }
 }
 
 .carusel:hover {
+    -webkit-transform: scale(0.995);
+    -ms-transform: scale(0.995);
     transform: scale(0.995);
+    -webkit-transition: linear 0.5s;
+    -o-transition: linear 0.5s;
     transition: linear 0.5s;
 }
 
 .circle:hover {
     border: 2px solid honeydew;
     background-color: #b8b8b8;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
 }
