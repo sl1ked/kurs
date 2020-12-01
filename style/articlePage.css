@@ -163,3 +163,22 @@
 section {
     padding-top: 54px;
 }
+
+.add-comment>form>textarea {
+    width: 100%;
+}
+
+.main-btn {
+    background: var(--main-gradient);
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    box-shadow: 0 0 15px rgba(124, 124, 124, 0.158);
+    transition: .3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-1px);
+}
