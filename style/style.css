@@ -83,7 +83,7 @@ header {
     width: 100%;
     height: 300px;
 }
-
+/* 
 footer {
     width: 100vw;
     background: #EDEDED;
@@ -91,7 +91,7 @@ footer {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
     line-height: 6px;
-}
+} */
 
 .container-footer {
     display: -webkit-box;
@@ -115,13 +115,13 @@ footer {
     width: 23px;
 }
 
-.bg-vk {
+.bg-inst {
     height: 23px;
     width: 23px;
     background-position: 0 0;
 }
 
-.bg-inst {
+.bg-vk {
     height: 15px;
     width: 23px;
     background-position-y: -22px;

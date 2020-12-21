@@ -1,0 +1,154 @@
+@media (max-width: 576px) {
+    .content-AboutUS{
+        
+        width: calc(100vw - 32px);
+        margin: 40px 16px;
+    }
+    .developers-container{
+        grid-template-columns: 1fr ;
+        gap:  78px 220px ;
+    }    .developer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:0 45px;
+        justify-self: center;
+        max-width: 198px;
+    }
+    h1,.text{
+        font-size: 24px;
+    }
+    .text{
+        font-size: 14px;
+    
+    }
+    .developer-sn{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 576px) {
+    .content-AboutUS{
+        width:560px;
+        margin: 40px auto;
+    }    
+    .developers-container{
+        grid-template-columns: 1fr ;
+        gap:  78px 220px ;
+    }
+    .developer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0 45px
+    }
+    h1,.text{
+        font-size: 36px;
+    }
+    .text{
+        font-size: 18px;
+    
+    }
+    .developer-sn{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-AboutUS{
+        width:960px;
+        margin: 40px auto;
+
+    } 
+    .developers-container{
+        grid-template-columns: 1fr 1fr;
+    gap:  78px 10px ;
+
+    }
+    .developer{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap:0 45px
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .content-AboutUS{
+        width:1140px;
+        margin: 40px auto;
+
+    }   
+    .developers-container{
+        grid-template-columns: 1fr 1fr;
+    gap:  78px 220px ;
+
+    }
+    .developer{
+
+        gap:0 145px
+    }
+}
+.developers-container{
+    font-family: 'Rubik';
+    font-weight: 300;
+    display:grid ;
+}
+.avatar{
+    background-color: rgb(216, 216, 216);
+    width: 198px;
+    height: 198px;
+}
+.developer{
+    display: grid;
+    gap:0 45px
+}
+
+.developer-sn>div{
+    display: grid;
+    grid-template-columns: 20px auto;
+    column-gap: 13px;
+    margin-bottom: 6px ;
+}
+
+.developer-sn>div>p{
+    margin: 0;
+}
+.img-sprite{
+    align-self: center;
+}
+
+.aboutdeveloper
+{
+align-self: center;
+}
+.position{
+    font-size: 22px;
+    color:#8E8E8E;
+}
+.developer-sn{
+    font-size: 14px;
+}
+.name{
+    font-size: 26px;
+}
+
+h1,.text{
+    font-weight: 300;
+    font-family: 'Rubik';
+    letter-spacing: -0.05em;
+}
+.text{
+    font-size: 18px;
+
+}
+.developer-sn{
+    font-size: 14px;
+}
+.name{
+    font-size: 26px;
+}
